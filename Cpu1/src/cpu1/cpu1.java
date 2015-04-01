@@ -11,10 +11,10 @@ import org.hyperic.sigar.Sigar;
 import org.hyperic.sigar.SigarException;
 
 
-public class Cpu {
+public class cpu1 {
   private static Sigar sigar;
 
-    public Cpu(Sigar s) throws SigarException {
+    public cpu1(Sigar s) throws SigarException {
         sigar = s;
         System.out.println(cpuInfo());
     }
@@ -77,8 +77,8 @@ public class Cpu {
       return cpu.getPercent();
     }
     public static void main(String[] args) throws InterruptedException, SigarException {
-   	 new Cpu(new Sigar());
-       Cpu.startMetricTest();
+   	 new cpu1(new Sigar());
+       cpu1.startMetricTest();
    }
 
 }
