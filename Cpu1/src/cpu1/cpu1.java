@@ -72,8 +72,7 @@ public class cpu1 {
     public static double getMetric(String pid) throws SigarException {
     	
         ProcCpu cpu = sigar.getProcCpu(pid);
-    // System.out.println(sigar.getProcFd(pid));
-      //  System.err.println(cpu.toString());
+    
       return cpu.getPercent();
     }
     public static void main(String[] args) throws InterruptedException, SigarException {
