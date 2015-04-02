@@ -78,6 +78,7 @@ public class cpu1 {
     public static void main(String[] args) throws InterruptedException, SigarException {
    	 new cpu1(new Sigar());
        cpu1.startMetricTest();
+       System.out.println("success");
    }
 
 }
